@@ -10,7 +10,7 @@ abstract class UserProfileEvent extends Equatable {
 class CreateUserProfileEvent extends UserProfileEvent {
   final String fullname;
   final String shopname;
-  final int mobile;
+  final String mobile;
   final int pincode;
   final String place;
   final String district;

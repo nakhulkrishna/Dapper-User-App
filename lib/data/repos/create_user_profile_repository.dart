@@ -11,15 +11,16 @@ class CreateUserProfileRepository {
   Future<ProfileModel> createProfile(
     String ownerName,
     String shopName,
-    int phoneNumber,
+    String phoneNumber,
     int pincode,
     String place,
     String district,
     String city,
+    String token,
   ) async {
     try {
-      final response = await userProfileProvider.createUserProfile(
-          ownerName, shopName, phoneNumber, pincode, place, district, city);
+      final response = await userProfileProvider.createUserProfile(ownerName,
+          shopName, phoneNumber, pincode, place, district, city, token);
       return response;
     } catch (e, stack) {
       log(e.toString(), stackTrace: stack);

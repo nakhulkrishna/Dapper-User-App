@@ -92,7 +92,7 @@ class EditProfile extends StatelessWidget {
                                       CreateUserProfileEvent(
                                         fullname: ownerName.text,
                                         shopname: shopName.text,
-                                        mobile: int.parse(phoneNumber.text),
+                                        mobile: phoneNumber.text,
                                         pincode: int.parse(pincode.text),
                                         place: state.text,
                                         district: district.text,

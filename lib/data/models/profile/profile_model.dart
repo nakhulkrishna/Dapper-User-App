@@ -4,7 +4,7 @@ import 'dart:convert';
 class ProfileModel {
   final String fullname;
   final String shopname;
-  final int mobile;
+  final String mobile;
   final int pincode;
   final String city;
   final String district;
@@ -36,7 +36,7 @@ class ProfileModel {
     return ProfileModel(
       fullname: map['fullname'] as String,
       shopname: map['shopname'] as String,
-      mobile: map['mobile'] as int,
+      mobile: map['mobile'] as String,
       pincode: map['pincode'] as int,
       city: map['city'] as String,
       district: map['district'] as String,
